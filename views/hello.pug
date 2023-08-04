@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+    head
+        title hello world
+        link(rel="stylesheet" href="/css/style.css")
+    body
+        h1 How are you
+        div.remark
+            p Pug works
+        ol#shopping.groceries
+            li mangoes
+            li oranges
+            li grapes
+            li jackfruit
+        .connect 
+            p 
+                a(href="www.google.com") google
+            img#fruits.food(src="http:/", alt="", height="")
+        form(action="post" name="signup")
+            label(for="username") username
+            input#username(type="text", name="username") 
+            label(for="email") email 
+            input#email(type="email", name="email")
+            label(for="password") password
+            input#password(type="password", name="password") 
+        
+        p 
+            | name 
+            | address
+
+        - const pi = 3.14 
+        //unbuffered code (the const doesnt show up on the code)
+
+        p="2 to the power of 10 is: "+ 2**10  
+        //buffered code (shows up in our page)
+
+        -let name = "jemimah"
+        p hello Jemimah
+
+        - const employees=["Angella", "John", "Doe", "Simon", "Peter", "Judas"]
+        ul 
+            if employees.length
+                each employee in employees 
+                    li=employee
+            else 
+                li there are no employees registered
+
+             
+
+        script(source="js/validation.js")
