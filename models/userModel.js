@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const passportLocalMongoose = require("passport-local-mongoose");
+// this is what the mongoose reads.
 
 const signupSchema = new mongoose.Schema({
    firstname: {
