@@ -23,4 +23,7 @@ form(name="employeeform" method="POST" action="/api/regemployee")
   .mb-3
     label.form-label(for='telephone') telephone
     input#telephone.form-control(type='text' name='telephone' aria-describedby='emailHelp')
+    .mb-3
+    label.form-label(for='gender') Gender
+    input#gender.form-control(type='text' name='gender' aria-describedby='emailHelp')
   button.btn.btn-primary(type='submit') Submit

@@ -10,6 +10,7 @@ const EmployeeSchema = new mongoose.Schema ({
         type: String,
         trim: true
     },
+    
     age:{
         type: Number
     },
@@ -18,6 +19,9 @@ const EmployeeSchema = new mongoose.Schema ({
         unique:true //it won't save an email more than once
     },
     telephone:{
+        type: String
+    },
+    gender:{
         type: String
     }
 })
